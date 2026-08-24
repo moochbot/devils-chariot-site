@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support — Devil's Chariot</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#0a0a0a;color:#d4d4d4;
+  font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:48rem;margin:0 auto;padding:4rem 1.5rem 6rem}
+nav{display:flex;gap:1.5rem;font-size:.8rem;margin-bottom:3rem}
+nav a{color:#737373;text-decoration:none}
+nav a:hover{color:#d4d4d4}
+h1{font-size:1.875rem;font-weight:700;letter-spacing:-.02em;color:#fff;margin:0 0 1.5rem}
+h2{font-size:1.25rem;font-weight:600;color:#fff;margin:2.5rem 0 .75rem}
+h3{font-size:1rem;font-weight:600;color:#fff;margin:1.5rem 0 .5rem}
+p,ul,ol{margin:1rem 0}
+ul,ol{padding-left:1.5rem}
+li{margin:.25rem 0}
+strong{color:#fff;font-weight:600}
+a{color:#f97316;text-decoration:underline;text-underline-offset:2px}
+a:hover{color:#fff}
+hr{border:0;border-top:1px solid rgba(255,255,255,.1);margin:2.5rem 0}
+code{background:rgba(255,255,255,.06);padding:.1rem .35rem;border-radius:.25rem;
+  font-size:.875em;color:#e5e5e5}
+blockquote{margin:1rem 0;padding-left:1rem;border-left:2px solid rgba(255,255,255,.15);color:#a3a3a3}
+.tablewrap{overflow-x:auto;margin:1.5rem 0}
+table{width:100%;border-collapse:collapse;font-size:.875rem}
+th{text-align:left;font-weight:600;color:#fff;padding:.5rem .75rem;
+  border-bottom:1px solid rgba(255,255,255,.15)}
+td{padding:.5rem .75rem;vertical-align:top;border-bottom:1px solid rgba(255,255,255,.06)}
+footer{margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08);
+  font-size:.8rem;color:#737373}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav>
+<h1>Devil&#x27;s Chariot — Support</h1>
+<p>Write to <strong><a href="mailto:liuyouchen97@gmail.com">liuyouchen97@gmail.com</a></strong>, and include your iPhone model and iOS
+version.</p>
+<h2>Getting your flights into the app</h2>
+<p>Devil&#x27;s Chariot reads the CSV export Flighty produces. Flighty emails you that
+file rather than saving it to your iPhone, so there is a step in the middle.</p>
+<ol>
+<li>Open Flighty and go to <strong>Settings</strong>.</li>
+<li>Tap <strong>Account Data</strong>.</li>
+<li>Tap <strong>Export your Flights</strong>.</li>
+<li>Enter your email address. Flighty sends the file to it.</li>
+<li>Open that email on your iPhone. Tap the <code>.csv</code> attachment, then
+<strong>Share → Save to Files</strong>.</li>
+<li>Open Devil&#x27;s Chariot and tap <strong>Choose CSV File</strong>.</li>
+</ol>
+<p>From the Mail attachment you can also tap <strong>Share → Copy to Devil&#x27;s Chariot</strong>,
+which skips the trip through Files.</p>
+<h2>The picker will not let me select my file</h2>
+<p>The file must be a <code>.csv</code>. If Mail saved the attachment as <code>.txt</code>, rename it in
+the Files app and pick it again.</p>
+<h2>&quot;That does not look like a Flighty export&quot;</h2>
+<p>The app needs three columns present in the file: <code>Date</code>, <code>From</code>, and <code>To</code>. Any
+CSV carrying those column names imports, so a spreadsheet you maintain yourself
+works as long as the headers match. Flighty has renamed columns between versions
+— if a current export fails this check, send the file and it will be fixed in
+the next release.</p>
+<h2>Some rows were skipped</h2>
+<p>The import banner reports rows it dropped. A row is skipped when it has no date,
+or when either airport code is missing. Everything else in the file imports.</p>
+<h2>Importing twice</h2>
+<p>Safe. Each flight carries a stable identifier, so re-importing updates flights
+in place instead of duplicating them. Import a newer export whenever you want,
+and the app fills in what is new.</p>
+<h2>A flight is missing from the map</h2>
+<p>The map plots an airport only when it can find coordinates for that IATA code.
+The app ships coordinates for 5,342 airports. A small or newly opened airport
+can fall outside that list — the flight still counts in every total, it
+just draws no line. Send the airport code and it will be added.</p>
+<h2>My mileage does not match Flighty</h2>
+<p>The app measures great-circle distance between airports. Airlines and Flighty
+sometimes use flown distance or a published fare distance, which run slightly
+longer. Expect totals within a couple of percent of each other rather than an
+exact match.</p>
+<h2>Deleting your data</h2>
+<p><strong>Settings → Delete All Flights</strong> empties the app. Deleting the app removes the
+data with it. Nothing is stored anywhere else, so either one is final — see the
+<a href="../privacy/">privacy policy</a>.</p>
+<h2>Requirements</h2>
+<p>iPhone or iPad running iOS 16.4 or later. The app works with no network
+connection.</p>
+<footer>Devil's Chariot — a personal flight logbook for iPhone.</footer>
+</div>
+</body>
+</html>

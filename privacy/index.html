@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy — Devil's Chariot</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#0a0a0a;color:#d4d4d4;
+  font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:48rem;margin:0 auto;padding:4rem 1.5rem 6rem}
+nav{display:flex;gap:1.5rem;font-size:.8rem;margin-bottom:3rem}
+nav a{color:#737373;text-decoration:none}
+nav a:hover{color:#d4d4d4}
+h1{font-size:1.875rem;font-weight:700;letter-spacing:-.02em;color:#fff;margin:0 0 1.5rem}
+h2{font-size:1.25rem;font-weight:600;color:#fff;margin:2.5rem 0 .75rem}
+h3{font-size:1rem;font-weight:600;color:#fff;margin:1.5rem 0 .5rem}
+p,ul,ol{margin:1rem 0}
+ul,ol{padding-left:1.5rem}
+li{margin:.25rem 0}
+strong{color:#fff;font-weight:600}
+a{color:#f97316;text-decoration:underline;text-underline-offset:2px}
+a:hover{color:#fff}
+hr{border:0;border-top:1px solid rgba(255,255,255,.1);margin:2.5rem 0}
+code{background:rgba(255,255,255,.06);padding:.1rem .35rem;border-radius:.25rem;
+  font-size:.875em;color:#e5e5e5}
+blockquote{margin:1rem 0;padding-left:1rem;border-left:2px solid rgba(255,255,255,.15);color:#a3a3a3}
+.tablewrap{overflow-x:auto;margin:1.5rem 0}
+table{width:100%;border-collapse:collapse;font-size:.875rem}
+th{text-align:left;font-weight:600;color:#fff;padding:.5rem .75rem;
+  border-bottom:1px solid rgba(255,255,255,.15)}
+td{padding:.5rem .75rem;vertical-align:top;border-bottom:1px solid rgba(255,255,255,.06)}
+footer{margin-top:4rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.08);
+  font-size:.8rem;color:#737373}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a href="../privacy/">Privacy</a><a href="../support/">Support</a></nav>
+<h1>Privacy Policy — Devil&#x27;s Chariot</h1>
+<p><strong>Effective August 23, 2026. Applies to Devil&#x27;s Chariot for iOS, version 1.0.</strong></p>
+<p>Devil&#x27;s Chariot collects nothing. It has no account system, no server, and no
+analytics. Your flight history stays on your iPhone.</p>
+<p>The rest of this policy explains what that means in detail.</p>
+<h2>What the app stores</h2>
+<p>When you import a Flighty CSV export, the app reads the file you picked and
+saves these fields to a database inside its own iOS container:</p>
+<div class="tablewrap"><table><thead><tr><th>Field</th><th>Example</th></tr></thead><tbody><tr><td>Date</td><td>2026-09-14</td></tr><tr><td>Airline and flight number</td><td>UA 837</td></tr><tr><td>Departure and arrival airports</td><td>SFO → NRT</td></tr><tr><td>Scheduled and actual gate times</td><td>2026-09-14T11:15:00</td></tr><tr><td>Aircraft type</td><td>Boeing 787-9</td></tr><tr><td>Cabin class</td><td>Business</td></tr><tr><td>Departure and arrival terminals</td><td>I → 1</td></tr></tbody></table></div>
+<p>From the airport codes, the app calculates distance, city, country, region, and
+continent using dictionaries built into the app. That calculation runs on your
+iPhone.</p>
+<p>Columns the app does not use are discarded during import.</p>
+<p>When you pick a file, iOS places a copy of it in the app&#x27;s own cache directory
+so the app can read it. That copy stays inside the app&#x27;s private container on
+your iPhone, and iOS clears it along with the app&#x27;s other cached files.
+Deleting the app removes it.</p>
+<h2>Where that data goes</h2>
+<p>Nowhere. Version 1.0 makes no network connections of any kind.</p>
+<p>The app contains no advertising SDK, no analytics SDK, no crash-reporting
+service, and no tracking technology. It does not read your contacts, calendar,
+photos, location, or any identifier belonging to you or your device.</p>
+<p><strong>Settings → Data Sources</strong> lists the open datasets the app is built on, and
+each entry opens a web page if you tap it. Tapping one hands the address to
+Safari, which then loads it under Apple&#x27;s privacy terms. The app sends nothing
+of its own, and those sites receive no information about you from it.</p>
+<p>The maps are drawn from geographic data bundled inside the app, which is why the
+world map still renders in airplane mode.</p>
+<h2>Files you choose</h2>
+<p>The app reads a file in two situations, both of which you start:</p>
+<ul>
+<li>You tap <strong>Choose CSV File</strong> and pick a file through the iOS document picker.</li>
+<li>Another app hands the app a <code>.csv</code> file through the iOS share sheet.</li>
+</ul>
+<p>In both cases iOS grants access to that one file. The app cannot browse your
+files, and it reads nothing you have not handed it.</p>
+<h2>Deleting your data</h2>
+<p>Two ways, both immediate:</p>
+<ul>
+<li><strong>Settings → Delete All Flights</strong> removes every flight from the app and keeps
+the app installed.</li>
+<li><strong>Deleting the app</strong> removes the database with it, as iOS deletes an app&#x27;s
+container along with the app.</li>
+</ul>
+<p>Because no copy exists anywhere else, either action is final. You have nothing
+to request from us, because we hold nothing.</p>
+<h2>Security</h2>
+<p>The database lives in the app&#x27;s private container. iOS restricts that container
+to this app and encrypts it at rest whenever your iPhone is locked with a
+passcode, Face ID, or</p>
+&lt;!-- vale Google.WordListCase = NO --&gt;
+<p>Touch ID.</p>
+&lt;!-- vale Google.WordListCase = YES --&gt;
+<p>If you back up your iPhone to iCloud or a computer, the backup includes the
+app&#x27;s data. Apple&#x27;s own privacy policy governs those backups.</p>
+<h2>Children</h2>
+<p>The app collects no data from anyone, including children under 13. It contains
+no advertising, no in-app purchases, and no way to communicate with other
+people.</p>
+<h2>What Apple sees</h2>
+<p>Downloading the app is a transaction between you and Apple, and Apple&#x27;s privacy
+policy covers it. If you have turned on <strong>Settings → Privacy &amp; Security →
+Analytics &amp; Improvements → Share With App Developers</strong>, Apple may send us
+anonymous, aggregated crash reports. We never receive your flight data through
+that channel, and you can turn it off in iOS Settings at any time.</p>
+<h2>Changes</h2>
+<p>Material changes to this policy will appear here with a new effective date, and
+the App Store release notes will say what changed. Because the app collects no
+data, any future change that starts collecting some would ship as a new version
+you choose to install.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: <strong><a href="mailto:liuyouchen97@gmail.com">liuyouchen97@gmail.com</a></strong></p>
+<p>Devil&#x27;s Chariot is an independent app. Flighty is a trademark of its owner, and
+this app is neither affiliated with nor endorsed by Flighty.</p>
+<footer>Devil's Chariot — a personal flight logbook for iPhone.</footer>
+</div>
+</body>
+</html>
