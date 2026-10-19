@@ -65,12 +65,24 @@ works as long as the headers match. Flighty has renamed columns between versions
 — if a current export fails this check, send the file and it will be fixed in
 the next release.</p>
 <h2>Some rows were skipped</h2>
-<p>The import banner reports rows it dropped. A row is skipped when it has no date,
-or when either airport code is missing. Everything else in the file imports.</p>
-<h2>Importing twice</h2>
-<p>Safe. Each flight carries a stable identifier, so re-importing updates flights
-in place instead of duplicating them. Import a newer export whenever you want,
-and the app fills in what is new.</p>
+<p>The message after an import says how many rows it skipped. A row is skipped
+when its date is missing or is not a real date, or when either airport code is
+missing. It is also skipped when one of its gate times is not a real time.
+Everything else in
+the file imports. If a skipped row is a flight the app already has, that flight
+stays as it was.</p>
+<h2>Importing again</h2>
+<p>Importing the same file twice changes nothing. Each flight carries a stable
+identifier, so a second import updates flights in place instead of adding them
+twice.</p>
+<p>Importing a newer export makes the app match it. New flights are added, changed
+flights are updated, and flights that are no longer in the export are removed.
+Before it removes anything, the app asks <strong>Sync flight log?</strong> and says how many
+flights it will add and remove. Tap <strong>Cancel</strong> to leave everything as it is.</p>
+<p>Removing a flight also removes any cabin correction you recorded on it. An
+import never removes your airline status history.</p>
+<p>Export your full logbook from Flighty each time. An export that leaves flights
+out will offer to remove every one of them.</p>
 <h2>A flight is missing from the map</h2>
 <p>The map plots an airport only when it can find coordinates for that IATA code.
 The app ships coordinates for 5,342 airports. A small or newly opened airport
